@@ -1,0 +1,291 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin: auto;
+    background-image: url('./images/bg-colors.jpg');
+    justify-content: center;
+    color: white;
+}
+
+section {
+    width: 90vmin;
+    min-width: 400px;
+    min-height: 300px;
+    background-color: rgba(95, 95, 95, 0.7);
+    border-radius: 15px;
+    /* box-shadow: 2px 2px 15px 0px  white,
+                2px 2px 15px 0px  black,
+                2px -2px 10px 0px black,
+                2px -2px 10px 0px white,
+                -2px 2px 15px 0px black,
+                -2px -2px 10px 0px black; */
+    border: 3px solid rgb(219, 217, 217);
+    border-style: groove;
+    margin-bottom: 3vh;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+#front-form h2, #back-form h2{
+    text-align: center;
+}
+
+.form-header {
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    margin-bottom: 3vmin;
+    color: rgb(10, 60, 141);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px 15px 0 0;
+}
+
+.sec-title {
+    margin: 0;
+}
+
+.f-form1 {
+    height: 9vmin;
+    margin-bottom: 2vh;
+}
+
+.form-control {
+    margin-bottom: 2vmin;
+}
+
+#choose-file {
+    margin-left: 15vmin;
+    background-color: rgb(44, 86, 179);
+}
+
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+[type="file"] + label {
+    background: #174faa;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 1rem 30px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+[type="file"] + label:hover {
+    background-color: #113c80;
+    }
+
+.f-form2 {
+    width: 80vmin;
+}
+
+#selectedTitle, #selectTitle, .f-text-form, .font-size, .p-color, .text-font, .text-style, .text-weight, .text-shadow, .standard {
+    width: 50vmin;
+    margin-left: 16vmin;
+    text-align: left;
+    margin-bottom: 2vmin;
+}
+
+input[type=text] {
+    width: 55%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#selectedTitle a {
+    width: 15vmin;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1vmin;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#selectedTitle a:hover {
+    background-color: rgba(0, 0, 255, 0.4);
+}
+
+#selectedTitle img{
+    margin-left: 1vmin;
+}
+
+.f-text-form button, #address button, .userText button {
+    width: 20%;
+    background-color: #174faa;
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.f-text-form button:hover, #address button:hover {
+    background-color: #113c80;
+}
+
+#selectedTitle, #selectTitle label, .font-size label, .p-color label, .text-font label, .text-style label, .text-weight label, .text-shadow label, .standard label {
+    font-size: 1.2em;
+    font-family: 'Rubik', sans-serif;
+}
+
+#deleteItem {
+    display: inline-block;
+    background-color: #174faa;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+#imgPreview {
+    position: relative;
+    width: 90vmin;
+    height: 60vmin;
+    background-image: url('./images/frontprew.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 15px;
+    color: black;
+    overflow: hidden;
+}
+
+.cardFront {
+    position: absolute;
+    padding: 5px;
+    z-index: 9;
+    color: black;
+}
+
+.title {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    color: unset;
+}
+
+.window {
+    margin-bottom: 3vmin;
+}
+
+#imgPreview a:hover {
+    cursor:pointer;
+}
+
+#back-form {
+    /* text-align: center; */
+}
+
+#backImg{
+    position: relative;
+    display: inline-block;
+    width: 90vmin;
+    height: 60vmin;
+    background-image: url('./images/backpre.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 15px;
+    color: black;
+    /* color: var(--pick-color); */
+    overflow: hidden;
+}
+
+#cardBackP {
+    width: 40vmin;
+    height: 53vmin;
+    margin-top: 4vmin;
+    margin-left: 3vmin;
+    /* border: 1px solid pink; */
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vmin;
+    font-style: italic;
+    line-height: 4vmin;
+
+
+}
+
+#ws {
+    width: 6vmin;
+    height: 6vmin;
+    float:right;
+    /* border: 1px solid blue; */
+}
+
+#cardBackAd {
+    width: 34vmin;
+    height: 30vmin;
+    float: left;
+    margin-left: 8vmin;
+    margin-top: 26vmin;
+    /* border: 1px solid yellow; */
+}
+
+#cardBackAd > div {
+    width: 34vmin;
+    height: 5vmin;
+    margin-bottom: 1.8vmin;
+    /* border: 1px solid blue; */
+
+}
+
+#cardBackAd > div > a {
+    font-size: 2vw;
+}
+
+#address {
+    width: 40vmin;
+    margin-left: 16vmin;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 1vmin;
+    text-align: center;
+}
+
+#address > div {
+    
+}
+
+.userText {
+    width: 60vmin;
+    margin-top: 3vmin;
+    margin-left: 16vmin;
+    text-align: center;
+}
+
+.userText > div {
+    width: 60vmin;
+    text-align: center;
+}
+
+#createButton {
+    display: block;
+    width: 30vmin;
+    height: 30px;
+    padding: 1vmin;
+    background-color: rgba(3, 39, 243, 0.7);
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    line-height: 30px;
+}
+
+#createButton:link, #createButton:visited, #createButton:hover, #createButton:active {
+    text-decoration: none;
+    color: white;
+}

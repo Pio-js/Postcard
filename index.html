@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card</title>
+    <script async src="mainOK.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- /////////ATTENTION HERE!!!!///////// 
+DO NOT USE FORM TAGS. tHEY WILL BE UPDATE THE PAGE WHEN A FUNCTION IS EXECUTED, AND EVERY CHANGE TO THE PAGE WILL BE DELETED!-->
+
+<body>
+    <section id="front-form">
+        <div class="form-header">
+            <h2 class="sec-title">Select the front picture and the text</h2>
+        </div>
+        <div class="f-form1">
+            <input type="file" accept="image/*" id="choose-file" name="choose-file"/>
+            <label for="choose-file">Choose image</label>
+        </div>
+        <div class="f-form2">
+            <div class="f-text-form">
+                <input type="text" name="title" id="title"   placeholder="Card text">
+                <button onclick="textInput()">Submit</button>
+                <button onclick="resetText()">Reset</button>
+            </div>
+
+            <div id="selectedTitle">
+                <!-- here changeTitleStyle takes -->
+            </div>
+        </div>
+
+    </section>
+    <!-- card front preview -->
+    <section id="imgPreview">
+            <!-- this is the place where new titles id will be created -->
+    </section>
+    <!-- back side form -->
+    <section id="back-form">
+        <div class="form-header">
+            <h2 class="sec-title">Select the back picture and the text</h2>
+        </div>
+        <div class="standard">
+            <label for="sel6">Design of back side:</label>
+            <select class="form-control" id="sel6" onchange="selectBack(this);">
+                <option value="select" selected="selected">Select a design</option>
+                <option value="classic">Classic</option>
+                <option value="vintage">Vintage</option>
+            </select>
+        </div>
+        <div id="address">
+            <div>
+                <input type="text" id="nameF" name="nameF" placeholder="Name">
+                <input type="text" id="house" name="house" placeholder="Street and house number">
+                <input type="text" id="city" name="city" placeholder="Postcode and City">
+                <input type="text" id="country" name="country" placeholder="Country">
+            </div>
+            <div>
+                <button onclick="addressInput()">Submit</button>
+                <button onclick="resetAddress()">Reset</button>
+            </div>
+        </div>
+        <div class="userText">
+            <textarea name="personal" id="personal" cols="40" rows="10"></textarea>
+            <div>
+                <button onclick="personalInput()">Submit</button>
+                <button onclick="resetPersonal()">Reset</button> 
+            </div>
+        </div>
+    </section>
+    <!-- card back preview -->
+    <section id="backImg">
+        <div id="cardBack">
+            <div id="cardBackP">
+                <div id="ws"></div>
+                <div id="userText">
+                    <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quidem ad obcaecati, in fuga asperiores dolores, suscipit non nesciunt doloribus ut excepturi nobis velit deleniti rem vitae, vero quam amet.</a>
+                </div>
+            </div>
+            <div id="cardBackAd">
+                <div id="adName"><a></a></div>
+                <div id="adHouse"></div>
+                <div id="adCity"></div>
+                <div id="adCountry"></div>
+            </div>
+        </div>
+    </section>
+    <a id="createButton" href="./preview.html" onclick="generateCard();" value="Print Section" style="cursor: pointer;">
+    Create your Magic Card
+    </a>
+</body>
+</html>
